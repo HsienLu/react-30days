@@ -1,12 +1,16 @@
-import { Link } from "react-router"
+import {Link} from "react-router";
 
-function DayList(){
-    return(
+function DayList() {
+  return (
     <>
-        
-        <Link to="/Day1">Day1</Link>
-        <Link to="/Day2">Day2</Link>
+      <ul>
+        <li>
+          <Link to="/Day1">Day1</Link>
+        </li>
+      </ul>
+
+      {/* <Link to="/Day2">Day2</Link> */}
     </>
-    )
+  );
 }
-export default DayList
+export default DayList;
