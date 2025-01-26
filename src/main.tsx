@@ -7,7 +7,7 @@ import Day1 from "./component/Day1.tsx";
 import Day2 from "./component/Day2.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HashRouter basename="/react-30days/">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Day1" element={<Day1 />} />
