@@ -10,6 +10,9 @@ function DayList() {
         <li>
           <Link to="/Day2">Day2</Link>
         </li>
+        <li>
+          <Link to="/Day3">Day3</Link>
+        </li>
       </ul>
     </>
   );
