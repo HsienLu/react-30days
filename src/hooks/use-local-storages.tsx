@@ -3,8 +3,7 @@ import {useState} from "react";
 export default function useLocalStorage<T>(keyName: string) {
   const [storedValue, setStoredValue] = useState<T>(() => {
     const item = window.localStorage.getItem(keyName);
-    const itemJSON = JSON.parse(item!);
-    return itemJSON;
+    return JSON.parse(item!) ? JSON.parse(item!) : [];
   });
 
   const setValue = (value: T) => {
